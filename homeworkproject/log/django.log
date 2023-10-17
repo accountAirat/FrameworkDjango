@@ -1,0 +1,163 @@
+DEBUG 2023-10-15 15:16:42,053 views 9744 11156 get_user_ordered_products start user_id = 15
+DEBUG 2023-10-15 15:16:42,061 views 9744 11156 orders = <QuerySet [<Order: Order: 400.00>]>
+DEBUG 2023-10-15 15:16:42,072 views 9744 11156 products = {<django.db.models.fields.related_descriptors.create_forward_many_to_many_manager.<locals>.ManyRelatedManager object at 0x000001F09BD50EB0>}
+INFO 2023-10-15 15:16:42,092 basehttp 9744 11156 "GET /hw2/get_user_ordered_products/15/ HTTP/1.1" 200 296
+INFO 2023-10-16 07:38:10,996 autoreload 6864 12268 Watching for file changes with StatReloader
+WARNING 2023-10-16 07:38:27,866 log 6864 7108 Not Found: /
+WARNING 2023-10-16 07:38:27,866 basehttp 6864 7108 "GET / HTTP/1.1" 404 2276
+WARNING 2023-10-16 07:38:28,765 log 6864 7108 Not Found: /favicon.ico
+WARNING 2023-10-16 07:38:28,765 basehttp 6864 7108 "GET /favicon.ico HTTP/1.1" 404 2327
+INFO 2023-10-16 07:38:33,470 views 6864 7108 Index page accessed
+INFO 2023-10-16 07:38:33,495 basehttp 6864 7108 "GET /hw2/ HTTP/1.1" 200 14
+INFO 2023-10-16 07:38:40,811 basehttp 6864 7108 "GET /hw2/get_user_ordered_products/10 HTTP/1.1" 301 0
+DEBUG 2023-10-16 07:38:40,828 views 6864 6832 get_user_ordered_products start user_id = 10
+DEBUG 2023-10-16 07:38:40,845 views 6864 6832 orders = <QuerySet [<Order: Order: 100.00>]>
+DEBUG 2023-10-16 07:38:40,845 views 6864 6832 products = [<django.db.models.fields.related_descriptors.create_forward_many_to_many_manager.<locals>.ManyRelatedManager object at 0x000001F6AE500520>]
+INFO 2023-10-16 07:38:40,893 basehttp 6864 6832 "GET /hw2/get_user_ordered_products/10/ HTTP/1.1" 200 296
+INFO 2023-10-16 07:47:08,137 autoreload 6864 12268 C:\PythonSpecialization\Django\homeworkproject\homework2app\views.py changed, reloading.
+INFO 2023-10-16 07:47:10,199 autoreload 736 3652 Watching for file changes with StatReloader
+DEBUG 2023-10-16 07:47:13,169 views 736 8040 get_user_ordered_products start user_id = 10
+DEBUG 2023-10-16 07:47:13,179 views 736 8040 orders = <QuerySet [<Order: Order: 100.00>]>
+ERROR 2023-10-16 07:47:13,346 log 736 8040 Internal Server Error: /hw2/get_user_ordered_products/10/
+Traceback (most recent call last):
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PythonSpecialization\Django\homeworkproject\homework2app\views.py", line 29, in get_user_ordered_products
+    for j in i.products:
+TypeError: 'ManyRelatedManager' object is not iterable
+ERROR 2023-10-16 07:47:13,362 basehttp 736 8040 "GET /hw2/get_user_ordered_products/10/ HTTP/1.1" 500 64236
+INFO 2023-10-16 07:49:13,256 autoreload 736 3652 C:\PythonSpecialization\Django\homeworkproject\homework2app\views.py changed, reloading.
+INFO 2023-10-16 07:49:14,649 autoreload 10588 2960 Watching for file changes with StatReloader
+DEBUG 2023-10-16 07:49:17,175 views 10588 9372 get_user_ordered_products start user_id = 10
+DEBUG 2023-10-16 07:49:17,192 views 10588 9372 orders = <QuerySet [<Order: Order: 100.00>]>
+ERROR 2023-10-16 07:49:17,293 log 10588 9372 Internal Server Error: /hw2/get_user_ordered_products/10/
+Traceback (most recent call last):
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PythonSpecialization\Django\homeworkproject\homework2app\views.py", line 30, in get_user_ordered_products
+    for j in temp:
+TypeError: 'ManyRelatedManager' object is not iterable
+ERROR 2023-10-16 07:49:17,308 basehttp 10588 9372 "GET /hw2/get_user_ordered_products/10/ HTTP/1.1" 500 64503
+INFO 2023-10-16 07:50:46,152 autoreload 10588 2960 C:\PythonSpecialization\Django\homeworkproject\homework2app\views.py changed, reloading.
+INFO 2023-10-16 07:50:48,443 autoreload 10460 3976 Watching for file changes with StatReloader
+DEBUG 2023-10-16 07:50:59,170 views 10460 7440 get_user_ordered_products start user_id = 10
+DEBUG 2023-10-16 07:50:59,170 views 10460 7440 orders = <QuerySet [<Order: Order: 100.00>]>
+DEBUG 2023-10-16 07:50:59,186 views 10460 7440 products = []
+INFO 2023-10-16 07:50:59,210 basehttp 10460 7440 "GET /hw2/get_user_ordered_products/10/ HTTP/1.1" 200 204
+INFO 2023-10-16 07:51:48,924 autoreload 10460 3976 C:\PythonSpecialization\Django\homeworkproject\homework2app\views.py changed, reloading.
+INFO 2023-10-16 07:51:51,143 autoreload 6828 5672 Watching for file changes with StatReloader
+DEBUG 2023-10-16 07:51:51,861 views 6828 9464 get_user_ordered_products start user_id = 10
+DEBUG 2023-10-16 07:51:51,917 views 6828 9464 orders = <QuerySet [<Order: Order: 100.00>]>
+DEBUG 2023-10-16 07:51:52,076 views 6828 9464 temp = <QuerySet []>
+DEBUG 2023-10-16 07:51:52,150 views 6828 9464 products = []
+INFO 2023-10-16 07:51:52,177 basehttp 6828 9464 "GET /hw2/get_user_ordered_products/10/ HTTP/1.1" 200 204
+INFO 2023-10-16 07:54:35,523 autoreload 6828 5672 C:\PythonSpecialization\Django\homeworkproject\homework2app\models.py changed, reloading.
+INFO 2023-10-16 07:54:38,057 autoreload 10564 11304 Watching for file changes with StatReloader
+INFO 2023-10-16 07:56:54,671 autoreload 10564 11304 C:\PythonSpecialization\Django\homeworkproject\homework2app\views.py changed, reloading.
+INFO 2023-10-16 07:56:57,390 autoreload 6532 9352 Watching for file changes with StatReloader
+DEBUG 2023-10-16 07:56:57,907 views 6532 5728 get_user_ordered_products start user_id = 10
+DEBUG 2023-10-16 07:56:58,186 views 6532 5728 orders = <QuerySet [<Order: Order: 100.00>]>
+DEBUG 2023-10-16 07:56:58,302 views 6532 5728 temp = <bound method BaseManager.all of <django.db.models.fields.related_descriptors.create_forward_many_to_many_manager.<locals>.ManyRelatedManager object at 0x00000249D5629540>>
+ERROR 2023-10-16 07:56:58,514 log 6532 5728 Internal Server Error: /hw2/get_user_ordered_products/10/
+Traceback (most recent call last):
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PythonSpecialization\Django\homeworkproject\homework2app\views.py", line 31, in get_user_ordered_products
+    for j in temp:
+TypeError: 'method' object is not iterable
+ERROR 2023-10-16 07:56:58,529 basehttp 6532 5728 "GET /hw2/get_user_ordered_products/10/ HTTP/1.1" 500 64468
+INFO 2023-10-16 07:57:17,961 autoreload 6532 9352 C:\PythonSpecialization\Django\homeworkproject\homework2app\views.py changed, reloading.
+INFO 2023-10-16 07:57:20,420 autoreload 11676 8492 Watching for file changes with StatReloader
+INFO 2023-10-16 08:01:49,432 autoreload 11676 8492 C:\PythonSpecialization\Django\homeworkproject\homework2app\views.py changed, reloading.
+INFO 2023-10-16 08:01:51,012 autoreload 9024 8496 Watching for file changes with StatReloader
+DEBUG 2023-10-16 08:01:54,317 views 9024 5992 get_user_ordered_products start user_id = 10
+DEBUG 2023-10-16 08:01:54,326 views 9024 5992 orders = <QuerySet [<Order: Order: 100.00>]>
+ERROR 2023-10-16 08:01:54,672 log 9024 5992 Internal Server Error: /hw2/get_user_ordered_products/10/
+Traceback (most recent call last):
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PythonSpecialization\Django\homeworkproject\homework2app\views.py", line 35, in get_user_ordered_products
+    return render(request, 'homework2app/products.html', {'orders': orders})
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\defaulttags.py", line 852, in do_for
+    sequence = parser.compile_filter(bits[in_index + 1])
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '()' from 'order.products.all()'
+ERROR 2023-10-16 08:01:54,722 basehttp 9024 5992 "GET /hw2/get_user_ordered_products/10/ HTTP/1.1" 500 191234
+DEBUG 2023-10-16 08:02:21,163 views 9024 5992 get_user_ordered_products start user_id = 10
+DEBUG 2023-10-16 08:02:21,180 views 9024 5992 orders = <QuerySet [<Order: Order: 100.00>]>
+INFO 2023-10-16 08:02:21,196 basehttp 9024 5992 "GET /hw2/get_user_ordered_products/10/ HTTP/1.1" 200 218
+INFO 2023-10-17 19:22:24,442 autoreload 6968 12140 Watching for file changes with StatReloader
+WARNING 2023-10-17 19:22:30,956 log 6968 10892 Not Found: /
+WARNING 2023-10-17 19:22:30,956 basehttp 6968 10892 "GET / HTTP/1.1" 404 2276
+INFO 2023-10-17 19:22:36,129 views 6968 10892 Index page accessed
+INFO 2023-10-17 19:22:36,138 basehttp 6968 10892 "GET /hw2/ HTTP/1.1" 200 14
+DEBUG 2023-10-17 19:22:44,859 views 6968 10892 get_user_ordered_products start user_id = 1
+DEBUG 2023-10-17 19:22:44,870 views 6968 10892 orders = <QuerySet []>
+INFO 2023-10-17 19:22:44,918 basehttp 6968 10892 "GET /hw2/get_user_ordered_products/1/ HTTP/1.1" 200 204
+DEBUG 2023-10-17 19:23:08,112 views 6968 10892 get_user_ordered_products start user_id = 10
+DEBUG 2023-10-17 19:23:08,112 views 6968 10892 orders = <QuerySet [<Order: Order: 100.00>]>
+INFO 2023-10-17 19:23:08,126 basehttp 6968 10892 "GET /hw2/get_user_ordered_products/10/ HTTP/1.1" 200 218
+INFO 2023-10-17 19:23:58,123 autoreload 6968 12140 C:\PythonSpecialization\Django\homeworkproject\homework2app\models.py changed, reloading.
+INFO 2023-10-17 19:23:59,951 autoreload 5864 6172 Watching for file changes with StatReloader
+DEBUG 2023-10-17 19:24:01,460 views 5864 7188 get_user_ordered_products start user_id = 10
+DEBUG 2023-10-17 19:24:01,474 views 5864 7188 orders = <QuerySet [<Order: Order id: 1>]>
+INFO 2023-10-17 19:24:01,493 basehttp 5864 7188 "GET /hw2/get_user_ordered_products/10/ HTTP/1.1" 200 218
+DEBUG 2023-10-17 19:26:28,224 views 5864 7188 get_user_ordered_products start user_id = 16
+DEBUG 2023-10-17 19:26:28,233 views 5864 7188 orders = <QuerySet [<Order: Order id: 7>]>
+INFO 2023-10-17 19:26:28,245 basehttp 5864 7188 "GET /hw2/get_user_ordered_products/16/ HTTP/1.1" 200 1989
+DEBUG 2023-10-17 19:27:59,337 views 5864 7188 get_user_ordered_products start user_id = 16
+DEBUG 2023-10-17 19:27:59,352 views 5864 7188 orders = <QuerySet [<Order: Order id: 7>]>
+INFO 2023-10-17 19:27:59,373 basehttp 5864 7188 "GET /hw2/get_user_ordered_products/16/ HTTP/1.1" 200 1968

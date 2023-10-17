@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Все продукты пользователя id {{ orders.client }}{% endblock %}
+{% block content %}
+<table>
+    {% for order in orders %}
+        {% for product in order.products.all %}
+            <tr>
+                <td>{{ product.name }}</td>
+                <td>{{ product.description }}</td>
+            </tr>
+        {% endfor %}
+    {% endfor %}
+</table>
+{% endblock %}
