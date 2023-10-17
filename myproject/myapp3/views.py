@@ -50,12 +50,12 @@ def post_detail(request, year, month, slug):
 # 6
 def my_view(request):
     context = {"name": "John"}
-    return render(request, "homework2app/my_template.html", context)
+    return render(request, "myapp3/my_template.html", context)
 
 
 # 7 if
 class TemplIf(TemplateView):
-    template_name = "homework2app/templ_if.html"
+    template_name = "myapp3/templ_if.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -77,25 +77,25 @@ def view_for(request):
         'фазан': 'фиолетовый',
     }
     context = {'my_list': my_list, 'my_dict': my_dict}
-    return render(request, 'homework2app/templ_for.html', context)
+    return render(request, 'myapp3/templ_for.html', context)
 
 
 # 8
 def index(request):
-    return render(request, 'homework2app/index.html')
+    return render(request, 'myapp3/index.html')
 
 
 def about(request):
-    return render(request, 'homework2app/products.html')
+    return render(request, 'myapp3/products.html')
 
 
 # 9
 def author_posts(request, author_id):
     author = get_object_or_404(Author, pk=author_id)
     posts = Post.objects.filter(author=author).order_by('-id')[:5]
-    return render(request, 'homework2app/author_posts.html', {'author': author, 'posts': posts})
+    return render(request, 'myapp3/author_posts.html', {'author': author, 'posts': posts})
 
 
 def post_full(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
-    return render(request, 'homework2app/post_full.html', {'post': post})
+    return render(request, 'myapp3/post_full.html', {'post': post})

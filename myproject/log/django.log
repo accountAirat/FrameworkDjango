@@ -1,0 +1,83 @@
+INFO 2023-10-14 11:43:19,094 autoreload 7740 8700 Watching for file changes with StatReloader
+INFO 2023-10-14 11:47:20,141 autoreload 4356 4512 Watching for file changes with StatReloader
+INFO 2023-10-14 11:47:24,726 basehttp 4356 5876 "GET / HTTP/1.1" 200 10664
+WARNING 2023-10-14 11:47:26,318 log 4356 5876 Not Found: /favicon.ico
+WARNING 2023-10-14 11:47:26,335 basehttp 4356 5876 "GET /favicon.ico HTTP/1.1" 404 2113
+INFO 2023-10-14 11:50:51,841 autoreload 13132 12564 Watching for file changes with StatReloader
+INFO 2023-10-14 11:51:42,406 views 13132 5208 Index page accessed
+INFO 2023-10-14 11:51:42,411 basehttp 13132 5208 "GET /prefix/ HTTP/1.1" 200 13
+INFO 2023-10-14 11:51:50,879 basehttp 13132 5208 "GET /prefix/about HTTP/1.1" 301 0
+ERROR 2023-10-14 11:51:50,887 views 13132 11540 Error in about page: division by zero
+Traceback (most recent call last):
+  File "C:\PythonSpecialization\Django\myproject\myapp\views.py", line 15, in about
+    result = 1 / 0
+ZeroDivisionError: division by zero
+INFO 2023-10-14 11:51:50,893 basehttp 13132 11540 "GET /prefix/about/ HTTP/1.1" 200 27
+INFO 2023-10-14 11:53:06,903 autoreload 13132 12564 C:\PythonSpecialization\Django\myproject\myapp2\models.py changed, reloading.
+INFO 2023-10-14 11:53:09,874 autoreload 4780 1808 Watching for file changes with StatReloader
+INFO 2023-10-14 17:29:34,513 autoreload 8488 3848 Watching for file changes with StatReloader
+WARNING 2023-10-14 17:29:47,832 log 8488 4620 Not Found: /
+WARNING 2023-10-14 17:29:47,834 basehttp 8488 4620 "GET / HTTP/1.1" 404 2169
+WARNING 2023-10-14 17:29:48,516 log 8488 4620 Not Found: /favicon.ico
+WARNING 2023-10-14 17:29:48,518 basehttp 8488 4620 "GET /favicon.ico HTTP/1.1" 404 2220
+INFO 2023-10-14 17:30:13,038 autoreload 8488 3848 C:\PythonSpecialization\Django\myproject\myproject\urls.py changed, reloading.
+INFO 2023-10-14 17:30:14,806 autoreload 924 9360 Watching for file changes with StatReloader
+INFO 2023-10-14 17:31:38,380 autoreload 6828 4196 Watching for file changes with StatReloader
+INFO 2023-10-14 17:32:16,766 autoreload 2428 9844 Watching for file changes with StatReloader
+ERROR 2023-10-14 17:32:23,559 log 2428 10024 Internal Server Error: /les3/index/
+Traceback (most recent call last):
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PythonSpecialization\Django\myproject\myapp3\views.py", line 85, in index
+    return render(request, 'homework2app/index.html')
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: homework2app/index.html
+ERROR 2023-10-14 17:32:23,607 basehttp 2428 10024 "GET /les3/index/ HTTP/1.1" 500 78142
+INFO 2023-10-14 17:34:05,592 autoreload 2428 9844 C:\PythonSpecialization\Django\myproject\myapp3\views.py changed, reloading.
+INFO 2023-10-14 17:34:06,923 autoreload 8128 7260 Watching for file changes with StatReloader
+INFO 2023-10-14 17:34:09,801 basehttp 8128 9336 "GET /les3/index/ HTTP/1.1" 200 248
+INFO 2023-10-14 17:34:46,739 autoreload 8128 7260 C:\PythonSpecialization\Django\myproject\myapp3\views.py changed, reloading.
+INFO 2023-10-14 17:34:48,934 autoreload 9156 7364 Watching for file changes with StatReloader
+ERROR 2023-10-14 17:34:50,345 log 9156 7460 Internal Server Error: /les3/index/
+Traceback (most recent call last):
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PythonSpecialization\Django\myproject\myapp3\views.py", line 85, in index
+    return render(request, 'index.html')
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+ERROR 2023-10-14 17:34:50,379 basehttp 9156 7460 "GET /les3/index/ HTTP/1.1" 500 77896
+INFO 2023-10-14 17:35:01,919 autoreload 3712 1932 Watching for file changes with StatReloader
+ERROR 2023-10-14 17:35:04,395 log 3712 5376 Internal Server Error: /les3/index/
+Traceback (most recent call last):
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PythonSpecialization\Django\myproject\myapp3\views.py", line 85, in index
+    return render(request, 'index.html')
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\PythonSpecialization\Django\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: index.html
+ERROR 2023-10-14 17:35:04,526 basehttp 3712 5376 "GET /les3/index/ HTTP/1.1" 500 77896
+INFO 2023-10-14 17:35:26,223 autoreload 3712 1932 C:\PythonSpecialization\Django\myproject\myapp3\views.py changed, reloading.
+INFO 2023-10-14 17:35:27,500 autoreload 32 8776 Watching for file changes with StatReloader
+INFO 2023-10-14 17:35:29,995 basehttp 32 6908 "GET /les3/index/ HTTP/1.1" 200 248
