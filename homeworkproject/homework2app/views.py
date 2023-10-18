@@ -1,7 +1,10 @@
 import logging
+
+from django.core.files.storage import FileSystemStorage
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404
-from homework2app.models import User, Order
+from .models import User, Order, Product
+from .forms import ImageForm
 
 logger = logging.getLogger(__name__)
 
@@ -33,3 +36,19 @@ def get_user_ordered_products(request, user_id):
 
     # logger.debug(f'{products = }')
     return render(request, 'homework2app/products.html', {'orders': orders})
+
+
+def add_image_product(request, product_id):
+    product = get_object_or_404(Product, pk=product_id)
+
+    if request.method == 'POST':
+        form = ImageForm(request.POST, request.FILES)
+        if form.is_valid():
+            image = form.cleaned_data['image']
+            fs = FileSystemStorage()
+            fs.save(image.name, image)
+            product.image = image.name
+            product.save()
+    else:
+        form = ImageForm()
+    return render(request, 'homework2app/product_image.html', {'form': form, 'product': product})

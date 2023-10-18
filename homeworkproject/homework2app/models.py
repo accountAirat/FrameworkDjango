@@ -20,6 +20,7 @@ class Product(models.Model):
     count = models.IntegerField()
     added_date = models.DateTimeField(auto_now_add=True)
     deletion_date = models.DateTimeField(blank=True, null=True)
+    image = models.ImageField(upload_to='products/', null=True, blank=True)
 
     def __str__(self):
         return f'Productname: {self.name}'
